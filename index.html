@@ -151,7 +151,8 @@
 
         // Send a POST request to your Google Apps Script
         fetch(
-          "https://script.google.com/macros/s/AKfycbz0l9KCujkyYnUakpzFO8iHR85SapU0htkPuQaDQ12GL8YduZMwTgAECN2PKzfoH5D9/exec",
+          process.env.URL,
+          //"https://script.google.com/macros/s/AKfycbz0l9KCujkyYnUakpzFO8iHR85SapU0htkPuQaDQ12GL8YduZMwTgAECN2PKzfoH5D9/exec",
           {
             redirect: "follow",
             method: "POST",
